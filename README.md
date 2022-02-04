@@ -1,6 +1,30 @@
 # db_ecogomi
-#install mysql and set password
+```
+sudo apt-get update 
+sudo apt-get upgrade
+```
+# install requirements
+```
+sudo apt-get install build-essential git python3-dev python3-pip python3-smbus
+```
+# install mysql and set password
+```
+# Config
+```
+On this screen use your ARROW keys to go down and select “5 Interfacing Options” and press ENTER.
 
+3. On the next screen, you will want to use your ARROW keys to select the “P4 SPI” option, once selected press ENTER.
+
+4. You will now need to confirm if you want to enable the SPI Interface. To this, you will want to use your ARROW keys to select “Yes” and then press ENTER once it’s selected.
+
+5. The SPI Interface should now be successfully enabled, and you should now see the text “The SPI interface is enabled” appear on the screen.
+
+Now before the SPI interface is fully enabled, we will need to restart the Raspberry Pi. We can achieve this by going back to the terminal by pressing ENTER and then ESC.
+```
+```
+sudo pip3 install spidev
+sudo pip3 install mfrc522
+```
 ```
 sudo apt install mariadb-server
 sudo mysql_secure_installation
@@ -94,7 +118,7 @@ finally:
   GPIO.cleanup()
 
 ```
-  
+
  sudo mysql -u root -p
  use attendancesystem;
   
